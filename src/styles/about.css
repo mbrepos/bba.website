@@ -1,0 +1,113 @@
+@media screen and (min-width: 100px) and (max-width:1186px) {
+    .about {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: left;
+        display: block;
+    }
+    
+    .about-landing {
+        background-color: black;
+        height: 100vh;
+        padding-top: 170px;
+        justify-content: center;
+        align-content: center;
+    }
+    .about-landing img {
+        width: 300px;
+
+    }
+
+    .block{
+        width: 900px;
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+        text-align: center;
+
+    }
+    .falcon-super{
+        height: "100px"; 
+        width: "100px"; 
+        background: "black"; 
+        position: "absolute";
+        right: "90px";
+        top: "610px";
+        display: "flex";
+        display: none;
+    }
+    .about-info{
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .about-info-element{
+        display: block;
+        gap: 40px;
+    }
+    .social-icon{
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+    }
+    .about-wrapper-el{
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1186px){
+    .about {
+        background-color: white;
+    }
+    
+    .about-landing {
+        background-color: black;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: left;
+    }
+
+    .falcon-super{
+        height: 200px;
+        width: 800px;
+        background: black;
+        position: relative;
+        left: 200px;
+        top: -60px;
+        display: flex;
+    }
+    
+    .about-info{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .about-info-element{
+        display: flex;
+        gap: 40px;
+    }
+    .social-icon{
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+    }
+    
+
+}
