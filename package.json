@@ -9,19 +9,26 @@
   "license": "MIT",
   "main": "src/index.js",
   "dependencies": {
+    "@babel/plugin-syntax-flow": "^7.25.9",
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
     "bootstrap": "5.3.3",
     "caniuse-lite": "^1.0.30001680",
-    "react": "18.3.1",
-    "react-bootstrap": "2.10.5",
-    "react-dom": "18.3.1",
+    "css-select": "^5.1.0",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.7",
+    "react-dom": "19.0.0",
     "react-pdf": "^9.1.1",
     "react-router-dom": "6.28.0",
     "react-scripts": "^5.0.1",
-    "react-social-icons": "6.18.0"
+    "react-social-icons": "^6.20.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.26.0",
     "typescript": "^4.9.5"
+  },
+  "resolutions": {
+    "nth-check": ">=2.0.1",
+    "postcss": ">=8.4.31"
   },
   "scripts": {
     "start": "react-scripts start",
