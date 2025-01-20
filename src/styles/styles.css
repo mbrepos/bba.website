@@ -1,9 +1,9 @@
 :root {
-  --lightText: #fff;
+  --lightText: #ffffff;
   --darkText: #0d1018;
   --headerColor: #fff;
   --blueColor: #2a5cb1;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 
@@ -35,6 +35,44 @@ body{
 }
 
 @media screen and (min-width: 100px) and (max-width:480px) {
+
+  .description {
+    display: inline-block;
+    overflow: auto;
+  }
+
+  .description p {
+    margin: 12px;
+  }
+
+  .description-wrapper {
+  }
+
+  .description-container {
+  }
+
+  .description-main-container {
+  }
+
+  .description-header {
+    color: white;
+    background: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .description-header pre {
+    text-align: justify;
+    color: white;
+    line-height: 1.1;
+    line-height-step: 1.1;
+    line-break: loose;
+    padding-bottom: 0px;
+  }
+
+  .description-container-item pre {
+  }
+
   .landing {
     display: flex;
     height: 800px;

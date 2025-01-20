@@ -53,8 +53,7 @@ export const Landing = () => {
       <div className="element-wrapper">
         <h1 className="element-wrapper-h1">Bentley Blockchain Association</h1>
         <h2 className="element-wrapper-h2">
-          Providing a borderless blockchain education experience at Bentley
-          University
+        Shaping the Future of Blockchain Innovation, Education, and Technology at Bentley University
         </h2>
         <div className="main-button">
           <Button href="https://medium.com/@Bentleyblockchain" target="_new" variant="outline-light">
@@ -72,8 +71,7 @@ const Goals = () => {
       <div id="a" className="goals-left-container">
         <div className="goals-text">
           <h2>
-            <span className="creating-inspiration">Driving Inspiration</span>,
-            Innovation & Education.
+            <span className="creating-inspiration"></span>
           </h2>
         </div>
         <div className="goals-buttons">
@@ -100,9 +98,7 @@ const Description = () => {
         <div className="description-main-container">
           <div className="description-header">
             {/* An ASCII header of BBA because who doesn't love ASCII... */}
-            <pre  style={{ color: "#FFFFFF", textAlign: "center", fontSize: "12px", lineHeight: "1.2", }}
-            
-                >{`
+            <pre style={{ color: "#FFFFFF" }}> {`
   ____                   _     _                                           
  | __ )    ___   _ __   | |_  | |   ___   _   _                            
  |  _ \\   / _ \\ | '_ \\  | __| | |  / _ \\ | | | |                           
@@ -125,7 +121,7 @@ const Description = () => {
             <div className="description-container-item">
               <div className="summary">
                 <h2>Our Saga...</h2>
-                <p style={{ textAlign: "center" }}>
+                <p>
                   The Bentley Blockchain Association (BBA) was founded in the
                   Fall of 2022 by{" "}
                   <span style={{ color: "#007BFF" }}> Alex Kim </span> and
@@ -141,9 +137,9 @@ const Description = () => {
             <div className="description-container-item">
               <div className="Vision">
                 <h2>Our Vision...</h2>
-                <p style={{ textAlign: "center" }}>
+                <p>
                   Our vision is to foster a limitless, think-tank where students from all walks of life can
-                  collaborate in persuit of innovation, economic prosperity, and
+                  collaborate in pursuit of innovation, economic prosperity, and
                   financial freedom.
                   <br /> {/* This line break adds a new line */}
                   <br /> {/* This line break adds a new line */}
@@ -157,7 +153,7 @@ const Description = () => {
             <div className="description-container-item">
               <div className="Mission">
                 <h2>Our Mission...</h2>
-                <p style={{ textAlign: "center" }}>
+                <p>
                   Our mission is to empower undergraduate students by providing
                   them with opportunities to explore blockchain, decentralized
                   finance (DeFi), and fintech related fields. We aim to create an
@@ -173,35 +169,13 @@ const Description = () => {
   );
 };
 
-const Vision = () => {
-  return (
-    <div className="Vision">
-      <div>
-        <h2>Vision</h2>
-        <p>
-          Promote economic opportunity, financial freedom, and innovation
-          through blockchain education and career opportunities.
-        </p>
-      </div>
-      <div>
-        <h2>Missions</h2>
-        <p>
-          Our mission is to provide undergraduate students with the opportunity
-          to learn about blockchain, decentralized finance (DeFi), and
-          cryptocurrency investments. Our goal is to make sure members excel in
-          the growing blockchain space by building educational resources that
-          can be applied everywhere they go.
-        </p>
-      </div>
-    </div>
-  );
-};
+// Removed unused Vision component
 
 const Team = () => {
   return (
     <div className="team">
       <div className="team-inner-container">
-        <h1>Meet the Team</h1>
+        <h1>Executive Board Members</h1>
         <div className="team-flex-container">
           <div className="row1">
             <div className="team-card-container"></div>
@@ -214,11 +188,11 @@ const Team = () => {
               />{" "}
             </div>
             <div className="team-card-container">
-              <TeamCard
-                name="Mike Binder"
-                title="VP of Systems & Technology"
-                icon={mikeclear}
-                linkden="https://www.linkedin.com/in/m-binder/"
+            <TeamCard
+                name="Samuel Capobianco"
+                title="Vice President of P&E"
+                icon={samclear}
+                linkden="https://www.linkedin.com/in/samuel-capobianco-13836622a/"
               />
             </div>
           </div>
@@ -226,10 +200,10 @@ const Team = () => {
             <div className="team-card-container"></div>
             <div className="team-card-container">
               <TeamCard
-                name="Samuel Capobianco"
-                title="VP of Partnerships & Education"
-                icon={samclear}
-                linkden="https://www.linkedin.com/in/samuel-capobianco-13836622a/"
+                name="Mike Binder"
+                title="Vice President of Technology"
+                icon={mikeclear}
+                linkden="https://www.linkedin.com/in/m-binder/"
               />
             </div>
             <div className="team-card-container">
@@ -246,7 +220,7 @@ const Team = () => {
             <div className="team-card-container">
               <TeamCard
                 name="Chris Guyette"
-                title="Ranking Member"
+                title="Distinguished Member"
                 icon={chrisclear}
                 linkden="https://www.linkedin.com/in/christopher-guyette"
               />
@@ -254,7 +228,7 @@ const Team = () => {
             <div className="team-card-container">
               <TeamCard
                 name="Antonis Moraitis"
-                title="Ranking Member"
+                title="Blockchain Analyst"
                 icon={antonisclear}
                 linkden="https://www.linkedin.com/in/antonismoraitis/"
               />
@@ -262,7 +236,7 @@ const Team = () => {
             <div className="team-card-container">
               <TeamCard
                 name="Zack Erickson"
-                title="Ranking Member"
+                title="Blockchain Analyst"
                 icon={zackclear}
                 linkden="https://www.linkedin.com/in/zach-erickson22/"
               />
