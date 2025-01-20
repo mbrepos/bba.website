@@ -1,9 +1,9 @@
 :root {
-  --lightText: #ffffff;
+  --lightText: #fff;
   --darkText: #0d1018;
   --headerColor: #fff;
   --blueColor: #2a5cb1;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 
@@ -35,44 +35,6 @@ body{
 }
 
 @media screen and (min-width: 100px) and (max-width:480px) {
-
-  .description {
-    display: inline-block;
-    overflow: auto;
-  }
-
-  .description p {
-    margin: 12px;
-  }
-
-  .description-wrapper {
-  }
-
-  .description-container {
-  }
-
-  .description-main-container {
-  }
-
-  .description-header {
-    color: white;
-    background: none;
-    width: 100%;
-    height: auto;
-  }
-
-  .description-header pre {
-    text-align: justify;
-    color: white;
-    line-height: 1.1;
-    line-height-step: 1.1;
-    line-break: loose;
-    padding-bottom: 0px;
-  }
-
-  .description-container-item pre {
-  }
-
   .landing {
     display: flex;
     height: 800px;
@@ -149,25 +111,13 @@ body{
 
   .description {
     background-color: #00133a;
-    /* #004181;  */
-    height: 1200px;
-    display: flex;
     align-items: center;
+    overflow: hidden;
   }
 
-  .description-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
-    align-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .description-main-container {
-    display: block;
-    align-items: center;
+  .description pre {
+    padding-left: 1rem 0;
+    scale: 0.66;
   }
 
   .description-title {
@@ -181,36 +131,28 @@ body{
     font-size: 20px;
   }
 
-  .description hr {
-    border: 2px solid white;
-    opacity: 1;
-
-  }
-
   .description-container {
     display: block;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 5px 0;
     -webkit-box-pack: justify;
     align-self: auto;
   }
 
   .description-container-item {
-    width: 300px;
-    padding: 25px 0 0;
-    text-align: left;
+    width: 360px 1;
+    padding: 24px 0 0;
+    text-align: relative;
     font-size: 14px;
     color: white;
-    margin-top: 40px;
     /* outline: solid; */
     /* background-color: white; */
     /* outline-color: black; */
-    margin: 10px;
-    padding-left: 10px;
-  }
-
-  .description-container-item p {
-    margin-top: 40px;
+    margin: 24px 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 1in;
+    padding-bottom: 1in;
   }
 
   .description-container-item h2 {
