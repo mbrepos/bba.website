@@ -1,18 +1,19 @@
 // Define theme variables for consistent styling across the application
 const theme = {
   colors: {
-    primary: '#144181',
-    secondary: '#f53554',
+    primary: '#030a2f',
+    secondary: '#f8f9fa',
     text: '#333',
     lightText: '#666',
     backgroundLight: '#f8f9fa',
     backgroundDark: '#1c1c1c',
+    navy: '#030a2f',
     white: '#ffffff',
     black: '#000000',
     error: '#dc3545',
     success: '#28a745',
     warning: '#ffc107',
-    info: '#17a2b8',
+    info: '#0000fa',
   },
   fonts: {
     primary: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',

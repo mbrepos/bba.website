@@ -1,29 +1,30 @@
 {
   "files": {
     "main.css": "/static/css/main.bf73b7c9.css",
-    "main.js": "/static/js/main.e1a2f647.js",
+    "main.js": "/static/js/main.b294b4e2.js",
     "static/media/construction.gif": "/static/media/construction.a9106449a2f648daf9bb.gif",
-    "static/media/image.gif": "/static/media/image.1bf90205cdc2f5372e5f.gif",
     "static/media/coverbg.png": "/static/media/coverbg.0190a22290846c3ca7a6.png",
     "static/media/bbalogowhite.png": "/static/media/bbalogowhite.52e8a2c56d4f9885a0db.png",
+    "static/media/nilufarclear.png": "/static/media/nilufarclear.29e09dc0702bf5d85766.png",
     "static/media/abstractabout.png": "/static/media/abstractabout.9826aa5f8063bcb649b0.png",
-    "static/media/chrisclear.png": "/static/media/chrisclear.88262bb2170ae459b339.png",
-    "static/media/mikeclear.png": "/static/media/mikeclear.58e2a0760c7bbfdbf73f.png",
+    "static/media/nicclear.png": "/static/media/nicclear.0ab677607428f8f3dd88.png",
+    "static/media/chrisclear.png": "/static/media/chrisclear.c47c392a98d7851c9a4c.png",
+    "static/media/javiclear.png": "/static/media/javiclear.1d3efbe2f404f802c031.png",
+    "static/media/samclear.png": "/static/media/samclear.4df95275f3beaaefa690.png",
+    "static/media/antonisclear.png": "/static/media/antonisclear.d03562467696753ed77e.png",
     "static/media/white.png": "/static/media/white.02dcd4ca69588a730e51.png",
-    "static/media/nilufarclear.png": "/static/media/nilufarclear.8e44a7350e792133d5c1.png",
+    "static/media/mikeclear.png": "/static/media/mikeclear.604dbf939f2a7669528b.png",
     "static/media/coingecko.png": "/static/media/coingecko.19dc6187b92c7d52b900.png",
-    "static/media/nicclear.png": "/static/media/nicclear.cb662a9bfe1b5b3c109f.png",
-    "static/media/samclear.png": "/static/media/samclear.25a885c47d1914da85b9.png",
     "static/media/encode.png": "/static/media/encode.ee4c0ed3b32531c03329.png",
     "static/media/the_tie.png": "/static/media/the_tie.dd85adf1a35adaf79cf1.png",
     "static/media/baf.png": "/static/media/baf.e7e942be21cbbcfe0ba4.png",
     "static/media/ben.png": "/static/media/ben.621b7837b4daa9bafe3f.png",
     "index.html": "/index.html",
     "main.bf73b7c9.css.map": "/static/css/main.bf73b7c9.css.map",
-    "main.e1a2f647.js.map": "/static/js/main.e1a2f647.js.map"
+    "main.b294b4e2.js.map": "/static/js/main.b294b4e2.js.map"
   },
   "entrypoints": [
     "static/css/main.bf73b7c9.css",
-    "static/js/main.e1a2f647.js"
+    "static/js/main.b294b4e2.js"
   ]
 }

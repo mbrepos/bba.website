@@ -83,7 +83,6 @@ export const GoalsWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors?.backgroundLight || '#f8f9fa'};
   align-items: center;
   justify-content: center;
-  gap: ${({ theme }) => theme.spacing?.xl || '4rem'};
   ${({ theme }) => theme.mq?.md || '@media (max-width: 1024px)'} {
     flex-direction: column;
     text-align: center;
@@ -92,7 +91,12 @@ export const GoalsWrapper = styled.div`
 `;
 
 export const GoalsLeftContainer = styled.div`
-  max-width: 500px;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 `;
 
 export const GoalsText = styled.div`
@@ -106,9 +110,8 @@ export const GoalsText = styled.div`
 export const GoalsButtons = styled.div`
   display: flex;
   gap: ${({ theme }) => theme.spacing?.md || '1rem'};
-  ${({ theme }) => theme.mq?.md || '@media (max-width: 1024px)'} {
-    justify-content: center;
-  }
+  justify-content: center;
+  margin-top: ${({ theme }) => theme.spacing?.md || '1rem'};
   ${({ theme }) => theme.mq?.xs || '@media (max-width: 480px)'} {
     flex-direction: column;
   }

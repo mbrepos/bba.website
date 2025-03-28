@@ -84,7 +84,7 @@ const Goals: React.FC = () => (
     <GoalsLeftContainer>
       <GoalsText>
         <h2>
-          <span className="creating-inspiration"></span>
+          <span className="creating-inspiration">Creating Inspiration Through Blockchain Innovation</span>
         </h2>
       </GoalsText>
       <GoalsButtons>
@@ -106,9 +106,6 @@ const Goals: React.FC = () => (
         </OutlineDarkButton>
       </GoalsButtons>
     </GoalsLeftContainer>
-    <div>
-      <img src={srcVector} alt="Education BBA" />
-    </div>
   </GoalsWrapper>
 );
 

@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
           ))}
         </FooterContent>
         <FooterBottom>
-          <p>{new Date().getFullYear()} "©" Bentley Blockchain Association. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Bentley Blockchain Association. All rights reserved.</p>
         </FooterBottom>
       </FooterInnerContainer>
     </FooterContainer>
