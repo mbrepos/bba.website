@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/state.css';
+import { StateContainer, DesktopView, MobileView, ReportFrame, MobileContent } from './styles';
 
 interface PoRProps {
   reportUrl?: string;
@@ -9,21 +9,20 @@ const PoR: React.FC<PoRProps> = ({ reportUrl }) => {
   const defaultReportUrl = 'https://www.canva.com/design/DAFjNTV2yLE/8TYPC6nJXJuK5-f67ouPYw/view';
 
   return (
-    <div className="state-container">
-      <div className="desktop-view">
-        <iframe
+    <StateContainer>
+      <DesktopView>
+        <ReportFrame
           src={reportUrl || defaultReportUrl}
           title="Proof of Reserves Report"
-          className="report-frame"
           allow="fullscreen"
         />
-      </div>
-      <div className="mobile-view">
-        <div className="mobile-content">
+      </DesktopView>
+      <MobileView>
+        <MobileContent>
           <h2>Proof of Reserves Report</h2>
           <p>
             Please access the report{' '}
-            <a 
+            <a
               href={reportUrl || defaultReportUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -32,9 +31,9 @@ const PoR: React.FC<PoRProps> = ({ reportUrl }) => {
             </a>
             .
           </p>
-        </div>
-      </div>
-    </div>
+        </MobileContent>
+      </MobileView>
+    </StateContainer>
   );
 };
 

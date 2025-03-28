@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/state.css';
+import { StateContainer, DesktopView, MobileView, ReportFrame, MobileContent } from './styles';
 
 interface StateProps {
   reportUrl?: string;
@@ -9,21 +9,20 @@ const State: React.FC<StateProps> = ({ reportUrl }) => {
   const defaultReportUrl = 'https://www.canva.com/design/DAFWVGGQKz4/aq-SdXTNAEv7MEcEyeS-dQ/view';
 
   return (
-    <div className="state-container">
-      <div className="desktop-view">
-        <iframe
+    <StateContainer>
+      <DesktopView>
+        <ReportFrame
           src={reportUrl || defaultReportUrl}
           title="State Report"
-          className="report-frame"
           allow="fullscreen"
         />
-      </div>
-      <div className="mobile-view">
-        <div className="mobile-content">
+      </DesktopView>
+      <MobileView>
+        <MobileContent>
           <h2>State Report</h2>
           <p>
             Please access the report{' '}
-            <a 
+            <a
               href={reportUrl || defaultReportUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -32,9 +31,9 @@ const State: React.FC<StateProps> = ({ reportUrl }) => {
             </a>
             .
           </p>
-        </div>
-      </div>
-    </div>
+        </MobileContent>
+      </MobileView>
+    </StateContainer>
   );
 };
 

@@ -1,7 +1,14 @@
 import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
-import { TeamCardModalProps } from '../types';
-import '../styles/teamcardmodal.css';
+import { Modal } from 'react-bootstrap';
+import { TeamCardModalProps } from '../../types'; // Corrected path
+import {
+  StyledModal,
+  TeamModalContent,
+  TeamModalImage,
+  ProfileImage,
+  TeamModalInfo,
+  StyledCloseButton,
+} from './styles';
 
 const TeamCardModal: React.FC<TeamCardModalProps> = ({
   show,
@@ -9,48 +16,43 @@ const TeamCardModal: React.FC<TeamCardModalProps> = ({
   name,
   title,
   bio,
-  image
+  image,
 }) => {
   const defaultBio = `As a key member of the Bentley Blockchain Association, ${name} brings valuable expertise and passion to our organization. In the role of ${title}, they contribute significantly to our mission of advancing blockchain education and innovation at Bentley University.`;
 
   return (
-    <Modal
+    <StyledModal
       show={show}
       onHide={onHide}
       size="lg"
       aria-labelledby="team-member-modal"
       centered
-      className="team-card-modal"
     >
       <Modal.Header closeButton>
         <Modal.Title id="team-member-modal">Team Member Profile</Modal.Title>
       </Modal.Header>
-      
-      <Modal.Body className="team-modal-body">
-        <div className="team-modal-content">
+
+      <Modal.Body>
+        <TeamModalContent>
           {image && (
-            <div className="team-modal-image">
-              <img src={image} alt={`${name} - ${title}`} className="profile-image" />
-            </div>
+            <TeamModalImage>
+              <ProfileImage src={image} alt={`${name} - ${title}`} />
+            </TeamModalImage>
           )}
-          <div className="team-modal-info">
+          <TeamModalInfo>
             <h2>{name}</h2>
             <h3>{title}</h3>
             <p>{bio || defaultBio}</p>
-          </div>
-        </div>
+          </TeamModalInfo>
+        </TeamModalContent>
       </Modal.Body>
-      
+
       <Modal.Footer>
-        <Button 
-          variant="secondary" 
-          onClick={onHide}
-          className="modal-close-button"
-        >
+        <StyledCloseButton variant="secondary" onClick={onHide}>
           Close
-        </Button>
+        </StyledCloseButton>
       </Modal.Footer>
-    </Modal>
+    </StyledModal>
   );
 };
 

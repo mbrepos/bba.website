@@ -216,13 +216,14 @@ export const DescriptionItem = styled.div`
 `;
 
 export const Highlight = styled.span`
-  color: ${({ theme }) => theme.colors?.info || '#007BFF'};
+  color: ${({ theme }) => theme.colors?.lightText || '#666'};
+  font-weight: ${({ theme }) => theme.fontWeights?.bold || 'bold'};
 `;
 
 export const Quote = styled.span`
   display: block;
   font-style: italic;
-  color: ${({ theme }) => theme.colors?.info || '#007BFF'};
+  color: ${({ theme }) => theme.colors?.lightText || '#666'};
   margin-top: ${({ theme }) => theme.spacing?.md || '1rem'};
 `;
 
