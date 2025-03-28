@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from '@emotion/react';
+import { ThemeProvider, Global } from '@emotion/react';
 import About from './components/About/index';
 import Construction from './components/Construction/index';
 import Contact from './components/Contact/index';
@@ -9,15 +9,16 @@ import State from './components/State';
 import PoR from './components/PoR';
 import theme from './styles/theme';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import { AppContainer, MainContent, globalStyles } from './styles/app';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <Global styles={globalStyles} />
       <Router>
-        <div className="App">
+        <AppContainer>
           <NavbarComp />
-          <main className="main-content">
+          <MainContent>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -27,8 +28,8 @@ function App() {
               <Route path="/por" element={<PoR />} />
               <Route path="*" element={<Construction />} />
             </Routes>
-          </main>
-        </div>
+          </MainContent>
+        </AppContainer>
       </Router>
     </ThemeProvider>
   );
