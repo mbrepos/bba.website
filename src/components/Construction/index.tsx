@@ -56,8 +56,8 @@ const Construction: React.FC = () => {
                 <h3>Want Updates?</h3>
                 <p>
                   Follow us on{' '}
-                  <a href="https://twitter.com/BentleyBBA" target="_blank" rel="noopener noreferrer">
-                    Twitter
+                  <a href="https://x.com/BentleyWeb3" target="_blank" rel="noopener noreferrer">
+                    X
                   </a>{' '}
                   for the latest news.
                 </p>
