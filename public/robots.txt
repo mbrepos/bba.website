@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
+# Hi Robot, you may index all pages. Cheers!
 User-agent: *
 Disallow:

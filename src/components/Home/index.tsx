@@ -243,7 +243,7 @@ const partnersData: PartnerItemProps[] = [
   { href: 'https://www.encode.club/', src: encode, alt: 'Encode Club Logo' },
   { href: 'https://www.coingecko.com/', src: coingecko, alt: 'CoinGecko Logo' },
   { href: 'https://www.thetie.io/', src: thetie, alt: 'The Tie Logo' },
-  { href: 'https://www.blockchainacceleratorfoundation.com/', src: baf, alt: 'BAF Logo' },
+  { href: 'https://www.blockchainacceleration.org/', src: baf, alt: 'BAF Logo' },
   { href: 'https://www.spawn.com/', src: spawn, alt: 'Spawn Logo' },
 ];
 
