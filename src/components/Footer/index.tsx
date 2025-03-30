@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
     {
       title: 'About',
       links: [
-        { label: 'Our Story', path: '/about' },
+        { label: 'About', path: '/about' },
         { label: 'Team', path: '/about#team' },
         { label: 'Contact', path: '/contact' },
       ],
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
         },
         {
           label: 'Medium Articles',
-          path: 'https://medium.com/@Bentleyblockchain',
+          path: 'https://medium.com/@Bentleyblockchain/',
           external: true,
         },
       ],
@@ -42,17 +42,17 @@ const Footer: React.FC = () => {
       links: [
         {
           label: 'Discord',
-          path: 'https://discord.gg/7K2MAqYJrQ',
+          path: 'https://discord.gg/7K2MAqYJrQ/',
           external: true,
         },
         {
-          label: 'Twitter',
-          path: 'https://twitter.com/BentleyBBA',
+          label: 'X',
+          path: 'https://x.com/BentleyWeb3/',
           external: true,
         },
         {
           label: 'LinkedIn',
-          path: 'https://www.linkedin.com/company/bentley-blockchain-association/',
+          path: 'https://www.linkedin.com/company/bentley-blockchain/',
           external: true,
         },
       ],

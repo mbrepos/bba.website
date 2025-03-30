@@ -66,8 +66,8 @@ const Contact: React.FC = () => {
   const socialLinks = [
     { url: 'https://discord.gg/7K2MAqYJrQ', network: 'discord' },
     { url: 'https://medium.com/@Bentleyblockchain', network: 'medium' },
-    { url: 'https://www.linkedin.com/company/bentley-blockchain-association/', network: 'linkedin' },
-    { url: 'https://twitter.com/BentleyBBA', network: 'twitter' },
+    { url: 'https://www.linkedin.com/company/bentley-blockchain', network: 'linkedin' },
+    { url: 'https://x.com/BentleyWeb3', network: 'x' },
   ];
 
   return (
@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="your.email@example.com"
+                  placeholder="email@example.com"
                   required
                 />
               </div>
@@ -194,7 +194,7 @@ const Contact: React.FC = () => {
 
                 <h4>Email</h4>
                 <p>
-                  <a href="mailto:bentleyblockchain@gmail.com">bentleyblockchain@gmail.com</a>
+                  <a href="mailto:blockchain@bentley.edu">blockchain@bentley.edu</a>
                 </p>
               </AdditionalInfo>
             </InfoCard>

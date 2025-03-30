@@ -1,18 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.d221dc40.css",
-    "main.js": "/static/js/main.426a7e62.js",
+    "main.js": "/static/js/main.a501b289.js",
     "static/media/construction.gif": "/static/media/construction.a9106449a2f648daf9bb.gif",
     "static/media/coverbg.png": "/static/media/coverbg.0190a22290846c3ca7a6.png",
     "static/media/bbalogowhite.png": "/static/media/bbalogowhite.52e8a2c56d4f9885a0db.png",
     "static/media/nilufarclear.png": "/static/media/nilufarclear.29e09dc0702bf5d85766.png",
-    "static/media/abstractabout.png": "/static/media/abstractabout.9826aa5f8063bcb649b0.png",
     "static/media/nicclear.png": "/static/media/nicclear.0ab677607428f8f3dd88.png",
     "static/media/chrisclear.png": "/static/media/chrisclear.c47c392a98d7851c9a4c.png",
     "static/media/javiclear.png": "/static/media/javiclear.1d3efbe2f404f802c031.png",
     "static/media/samclear.png": "/static/media/samclear.4df95275f3beaaefa690.png",
     "static/media/antonisclear.png": "/static/media/antonisclear.d03562467696753ed77e.png",
-    "static/media/white.png": "/static/media/white.02dcd4ca69588a730e51.png",
     "static/media/mikeclear.png": "/static/media/mikeclear.604dbf939f2a7669528b.png",
     "static/media/coingecko.png": "/static/media/coingecko.19dc6187b92c7d52b900.png",
     "static/media/encode.png": "/static/media/encode.ee4c0ed3b32531c03329.png",
@@ -21,10 +19,10 @@
     "static/media/ben.png": "/static/media/ben.621b7837b4daa9bafe3f.png",
     "index.html": "/index.html",
     "main.d221dc40.css.map": "/static/css/main.d221dc40.css.map",
-    "main.426a7e62.js.map": "/static/js/main.426a7e62.js.map"
+    "main.a501b289.js.map": "/static/js/main.a501b289.js.map"
   },
   "entrypoints": [
     "static/css/main.d221dc40.css",
-    "static/js/main.426a7e62.js"
+    "static/js/main.a501b289.js"
   ]
 }
