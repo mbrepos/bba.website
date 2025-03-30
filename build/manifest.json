@@ -1,6 +1,7 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "BBA",
+  "name": "Bentley Blockchain Association",
+  "description": "The Official Blockchain Organization Of Bentley University.",
   "icons": [
     {
       "src": "favicon.ico",

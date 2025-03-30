@@ -11,7 +11,7 @@ import {
   TeamCardInfo,
 } from './styles';
 
-const TeamCard: React.FC<TeamCardProps> = ({ name, title, icon, linkden }) => {
+const TeamCard: React.FC<TeamCardProps> = ({ name, title, icon, linkedin }) => {
     const [showModal, setShowModal] = useState(false);
   
     return (
@@ -21,7 +21,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title, icon, linkden }) => {
             <TeamCardPhoto src={icon} alt={`${name} - ${title}`} />
             <TeamCardSocial>
               <LinkedInIcon
-                url={linkden}
+                url={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 bgColor="white"

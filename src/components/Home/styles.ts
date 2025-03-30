@@ -28,15 +28,17 @@ export const ElementWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: ${({ theme }) => theme.spacing?.lg || '2rem'};
-  text-align: center;
+  text-align: left;
   color: ${({ theme }) => theme.colors?.white || 'white'};
 `;
 
 export const LandingTitle = styled.h1`
+  text-align: left;
   font-size: ${({ theme }) => theme.fontSizes?.xxxlarge || '3.5rem'};
   font-weight: ${({ theme }) => theme.fontWeights?.bold || 'bold'};
   margin-bottom: ${({ theme }) => theme.spacing?.lg || '1.5rem'};
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: font-size 0.3s ease;
   ${({ theme }) => theme.mq?.md || '@media (max-width: 1024px)'} {
     font-size: 3rem;
   }
@@ -49,30 +51,44 @@ export const LandingTitle = styled.h1`
 `;
 
 export const LandingSubtitle = styled.h2`
+  text-align: left;
   font-size: ${({ theme }) => theme.fontSizes?.xlarge || '1.75rem'};
   margin-bottom: ${({ theme }) => theme.spacing?.lg || '2rem'};
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: font-size 0.3s ease;
   ${({ theme }) => theme.mq?.md || '@media (max-width: 1024px)'} {
     font-size: 1.5rem;
   }
   ${({ theme }) => theme.mq?.sm || '@media (max-width: 768px)'} {
     font-size: 1.25rem;
   }
+  ${({ theme }) => theme.mq?.xs || '@media (max-width: 480px)'} {
+    font-size: 1rem;
+  }
 `;
 
 export const OutlineButton = styled.button<PolymorphicProps>`
   padding: 1rem 2.5rem;
   font-size: 1.125rem;
-  color: ${({ theme }) => theme.colors?.white || 'white'};
-  border: 1px solid ${({ theme }) => theme.colors?.white || 'white'};
-  background: transparent;
+  color: ${({ theme }) => theme.colors?.primary || '#144181'};
+  border: 1px solid ${({ theme }) => theme.colors?.primary || '#144181'};
+  background-color: ${({ theme }) => theme.colors?.white || 'white'};
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius?.small || '4px'};
+
   &:hover {
-    background: ${({ theme }) => theme.colors?.white || 'white'};
-    color: ${({ theme }) => theme.colors?.primary || '#000'};
+    background-color: transparent;
+    color: ${({ theme }) => theme.colors?.white || 'white'};
+    border: 1px solid ${({ theme }) => theme.colors?.white || 'white'};
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(20, 65, 129, 0.3);
   }
 `;
 
@@ -268,7 +284,7 @@ export const TeamCardContainer = styled.div`
 // Partners Section
 export const PartnersWrapper = styled.div`
   padding: ${({ theme }) => theme.spacing?.xxl || '5rem'} ${({ theme }) => theme.spacing?.lg || '2rem'};
-  background-color: ${({ theme }) => theme.colors?.white || 'white'};
+  background-color: ${({ theme }) => theme.colors?.primary || '#030a2f'};
 `;
 
 export const PartnersContainer = styled.div`
@@ -281,7 +297,7 @@ export const PartnerHeader = styled.div`
   margin-bottom: ${({ theme }) => theme.spacing?.xl || '3rem'};
   h1 {
     font-size: ${({ theme }) => theme.fontSizes?.xxlarge || '2.5rem'};
-    color: ${({ theme }) => theme.colors?.text || '#333'};
+    color: ${({ theme }) => theme.colors?.white || 'white'};
   }
 `;
 

@@ -41,7 +41,7 @@ export interface TeamCardProps {
     name: string;
     title: string;
     icon: string;
-    linkden: string;  // Note: keeping the original spelling for compatibility
+    linkedin: string;  // Note: keeping the original spelling for compatibility
 }
 
 export interface TeamCardModalProps {

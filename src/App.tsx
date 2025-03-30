@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AppContainer, MainContent, globalStyles } from './styles/app';
 import { ThemeProvider, Global } from '@emotion/react';
+import theme from './styles/theme';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import About from './components/About/index';
 import Construction from './components/Construction/index';
 import Contact from './components/Contact/index';
@@ -7,14 +10,13 @@ import Home from './components/Home/index';
 import NavbarComp from './components/NavbarComp/index';
 import State from './components/State';
 import PoR from './components/PoR';
-import theme from './styles/theme';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { AppContainer, MainContent, globalStyles } from './styles/app';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Global styles={globalStyles} />
+      <SpeedInsights />
       <Router>
         <AppContainer>
           <NavbarComp />

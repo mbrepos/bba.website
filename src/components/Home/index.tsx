@@ -176,7 +176,7 @@ const Team: React.FC = () => (
               name="Nicolas Saliou"
               title="Chairman"
               icon={nicclear}
-              linkden="https://www.linkedin.com/in/nicolas-saliou-744630251/"
+              linkedin="https://www.linkedin.com/in/nicolas-saliou-744630251/"
             />
           </TeamCardContainer>
           <TeamCardContainer>
@@ -184,7 +184,7 @@ const Team: React.FC = () => (
               name="Samuel Capobianco"
               title="President (Spring 2025)"
               icon={samclear}
-              linkden="https://www.linkedin.com/in/samuel-capobianco-13836622a/"
+              linkedin="https://www.linkedin.com/in/samuel-capobianco-13836622a/"
             />
           </TeamCardContainer>
         </TeamRow>
@@ -194,7 +194,7 @@ const Team: React.FC = () => (
               name="Mike Binder"
               title="Vice President, Technology"
               icon={mikeclear}
-              linkden="https://www.linkedin.com/in/m-binder/"
+              linkedin="https://www.linkedin.com/in/m-binder/"
             />
           </TeamCardContainer>
         <TeamCardContainer>
@@ -202,7 +202,7 @@ const Team: React.FC = () => (
               name="Javier Crisostomo"
               title="Vice President, Marketing"
               icon={javierclear}
-              linkden="https://www.linkedin.com/in/javicrisval/"
+              linkedin="https://www.linkedin.com/in/javicrisval/"
             />
           </TeamCardContainer>
           </TeamRow>
@@ -212,7 +212,7 @@ const Team: React.FC = () => (
               name="Antonis Moraitis"
               title="Blockchain Analyst"
               icon={antonisclear}
-              linkden="https://www.linkedin.com/in/antonismoraitis/"
+              linkedin="https://www.linkedin.com/in/antonismoraitis/"
             />
           </TeamCardContainer>
           <TeamCardContainer>
@@ -220,7 +220,7 @@ const Team: React.FC = () => (
               name="Nilufar Noorian"
               title="Director of Technology"
               icon={nilufarclear}
-              linkden="https://www.linkedin.com/in/nilufar-noorian/"
+              linkedin="https://www.linkedin.com/in/nilufar-noorian/"
             />
           </TeamCardContainer>
           <TeamCardContainer>
@@ -228,7 +228,7 @@ const Team: React.FC = () => (
               name="Chris Guyette"
               title="Senior Advisor"
               icon={chrisclear}
-              linkden="https://www.linkedin.com/in/christopher-guyette/"
+              linkedin="https://www.linkedin.com/in/christopher-guyette/"
             />
           </TeamCardContainer>
         </TeamRow>
