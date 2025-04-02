@@ -29,7 +29,7 @@ export const ElementWrapper = styled.div`
   margin: 0 auto;
   padding: ${({ theme }) => theme.spacing?.lg || '2rem'};
   text-align: left;
-  color: ${({ theme }) => theme.colors?.white || 'white'};
+  color: rgb(255, 255, 255); /* Changed to light grey/off-white as requested */
 `;
 
 export const LandingTitle = styled.h1`
@@ -37,7 +37,10 @@ export const LandingTitle = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes?.xxxlarge || '3.5rem'};
   font-weight: ${({ theme }) => theme.fontWeights?.bold || 'bold'};
   margin-bottom: ${({ theme }) => theme.spacing?.lg || '1.5rem'};
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 
+    2px 2px 3px rgba(0, 0, 0, 0.7),
+    0px 0px 10px rgba(0, 0, 0, 0.6),
+    1px 1px 15px rgba(0, 0, 0, 0.5); /* Multiple layered shadows for depth and impact */
   transition: font-size 0.3s ease;
   ${({ theme }) => theme.mq?.md || '@media (max-width: 1024px)'} {
     font-size: 3rem;
@@ -54,7 +57,10 @@ export const LandingSubtitle = styled.h2`
   text-align: left;
   font-size: ${({ theme }) => theme.fontSizes?.xlarge || '1.75rem'};
   margin-bottom: ${({ theme }) => theme.spacing?.lg || '2rem'};
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.6),
+    0px 0px 8px rgba(0, 0, 0, 0.5),
+    1px 1px 12px rgba(0, 0, 0, 0.4); /* Multiple layered shadows for depth and impact */
   transition: font-size 0.3s ease;
   ${({ theme }) => theme.mq?.md || '@media (max-width: 1024px)'} {
     font-size: 1.5rem;

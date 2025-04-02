@@ -64,23 +64,31 @@ import spawn from '../../images/spawn.png';
 const Landing: React.FC = () => (
   <LandingWrapper>
     <ElementWrapper>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+        <LandingTitle>Bentley Blockchain Association</LandingTitle>
+        
+        <LandingSubtitle style={{ maxWidth: '70%', marginBottom: '30px' }}>
+          Shaping the Future of Blockchain Innovation, Education, and Technology at Bentley University
+        </LandingSubtitle>
+        
         <div style={{ 
-          width: '300px',
-          height: '200px',
-          overflow: 'visible',
-          backgroundColor: 'transparent',
-          backdropFilter: 'none',
-          boxShadow: 'none',
-          borderRadius: '0'
+          display: 'flex', 
+          alignItems: 'center',
+          gap: '20px'
         }}>
-          <DwitterCanvas />
-        </div>
-        <div style={{ flex: '1', minWidth: '300px' }}>
-          <LandingTitle>Bentley Blockchain Association</LandingTitle>
-          <LandingSubtitle>
-            Shaping the Future of Blockchain Innovation, Education, and Technology at Bentley University
-          </LandingSubtitle>
+          <div style={{ 
+            width: '150px',
+            height: '120px',
+            overflow: 'visible',
+            backgroundColor: 'transparent',
+            backdropFilter: 'none',
+            boxShadow: 'none',
+            borderRadius: '0',
+            flexShrink: 0
+          }}>
+            <DwitterCanvas />
+          </div>
+          
           <OutlineButton
             as="a"
             href="https://medium.com/@Bentleyblockchain"

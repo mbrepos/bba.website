@@ -84,6 +84,28 @@ export const FooterLink = styled.a`
   }
 `;
 
+// Social links container
+export const SocialLinks = styled.div`
+  display: flex;
+  gap: ${({ theme }) => theme.spacing.md || '1rem'};
+  margin-top: ${({ theme }) => theme.spacing.sm || '0.5rem'};
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  ${({ theme }) => theme.mq?.md || '@media (max-width: 768px)'} {
+    justify-content: center;
+  }
+`;
+
+// Social icon wrapper
+export const SocialIconWrapper = styled.div`
+  transition: transform ${({ theme }) => theme.transitions?.fast || '0.2s ease'};
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
 // Bottom section for copyright
 export const FooterBottom = styled.div`
   text-align: center;

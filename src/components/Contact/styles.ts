@@ -5,7 +5,7 @@ export const ContactPage = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.backgroundLight};
+  background-color: ${({ theme }) => theme.colors.backgroundDark};
 `;
 
 // Content wrapper
@@ -17,17 +17,17 @@ export const ContactContent = styled.div`
 // Header section
 export const ContactHeader = styled.div`
   text-align: center;
-  margin-bottom: ${({ theme }) => theme.spacing.xl};
+  margin: 2rem 0 ${({ theme }) => theme.spacing.xl};
 
   h1 {
     font-size: ${({ theme }) => theme.fontSizes.xxxlarge};
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.white};
     margin-bottom: ${({ theme }) => theme.spacing.md};
   }
 
   p {
     font-size: ${({ theme }) => theme.fontSizes.large};
-    color: ${({ theme }) => theme.colors.lightText};
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
 

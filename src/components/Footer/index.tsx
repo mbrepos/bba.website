@@ -1,4 +1,5 @@
 import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 import {
   FooterContainer,
   FooterInnerContainer,
@@ -9,17 +10,20 @@ import {
   FooterListItem,
   FooterLink,
   FooterBottom,
+  SocialLinks,
+  SocialIconWrapper,
 } from './styles';
 import { FooterSection as FooterSectionType } from '../../types';
 
 const Footer: React.FC = () => {
   const footerSections: FooterSectionType[] = [
     {
-      title: 'About',
+      title: 'Site Map',
       links: [
+        { label: 'Home', path: '/' },
         { label: 'About', path: '/about' },
-        { label: 'Team', path: '/about#team' },
         { label: 'Contact', path: '/contact' },
+        { label: 'Publications', path: '/publications' }
       ],
     },
     {
@@ -37,26 +41,13 @@ const Footer: React.FC = () => {
         },
       ],
     },
-    {
-      title: 'Community',
-      links: [
-        {
-          label: 'Discord',
-          path: 'https://discord.gg/7K2MAqYJrQ/',
-          external: true,
-        },
-        {
-          label: 'X',
-          path: 'https://x.com/BentleyWeb3/',
-          external: true,
-        },
-        {
-          label: 'LinkedIn',
-          path: 'https://www.linkedin.com/company/bentley-blockchain/',
-          external: true,
-        },
-      ],
-    },
+  ];
+
+  const socialLinks = [
+    { url: 'https://discord.gg/7K2MAqYJrQ', network: 'discord' },
+    { url: 'https://medium.com/@Bentleyblockchain', network: 'medium' },
+    { url: 'https://www.linkedin.com/company/bentley-blockchain', network: 'linkedin' },
+    { url: 'https://x.com/BentleyWeb3', network: 'x' },
   ];
 
   return (
@@ -81,9 +72,25 @@ const Footer: React.FC = () => {
               </FooterList>
             </FooterSection>
           ))}
+          <FooterSection>
+            <FooterHeading></FooterHeading>
+            <SocialLinks>
+              {socialLinks.map((link, index) => (
+                <SocialIconWrapper key={index}>
+                  <SocialIcon
+                    url={link.url}
+                    network={link.network}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ height: 35, width: 35 }}
+                  />
+                </SocialIconWrapper>
+              ))}
+            </SocialLinks>
+          </FooterSection>
         </FooterContent>
         <FooterBottom>
-          <p>© {new Date().getFullYear()} Bentley Blockchain Association. All rights reserved.</p>
+          <p> © {new Date().getFullYear()} Bentley Blockchain Association. All rights reserved.</p>
         </FooterBottom>
       </FooterInnerContainer>
     </FooterContainer>

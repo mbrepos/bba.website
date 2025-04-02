@@ -110,14 +110,11 @@ const NavbarComp: React.FC = () => {
             <NavLink as={Link} to="/about" isScrolled={isScrolled}>
               About
             </NavLink>
-            <NavLink as={Link} to="/state" isScrolled={isScrolled}>
-              State of Association
-            </NavLink>
-            <NavLink as={Link} to="/por" isScrolled={isScrolled}>
-              Proof of Work
-            </NavLink>
             <NavLink as={Link} to="/contact" isScrolled={isScrolled}>
               Contact
+            </NavLink>
+            <NavLink as={Link} to="/publications" isScrolled={isScrolled}>
+              Publications
             </NavLink>
             {navItems.map(renderNavDropdown)}
           </NavLinksContainer>

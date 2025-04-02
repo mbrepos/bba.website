@@ -1,7 +1,8 @@
 {
     "name": "bentley.website.new",
-    "version": "1.2.0",
+    "version": "1.5.0",
     "private": true,
+    "homepage": "https://www.bentleyblockchain.com",
     "dependencies": {
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.0",

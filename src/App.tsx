@@ -9,8 +9,9 @@ import Construction from './components/Construction/index';
 import Contact from './components/Contact/index';
 import Home from './components/Home/index';
 import NavbarComp from './components/NavbarComp/index';
-import State from './components/State';
-import PoR from './components/PoR';
+import Publications from './components/Publications/index';
+import { State } from './components/Publications/State';
+import { PoR } from './components/Publications/PoR';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route path="/construction" element={<Construction />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/community" element={<Construction />} />
+              <Route path="/publications" element={<Publications />} />
               <Route path="/state" element={<State />} />
               <Route path="/por" element={<PoR />} />
               <Route path="*" element={<Construction />} />
