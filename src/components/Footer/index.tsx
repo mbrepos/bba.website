@@ -48,6 +48,7 @@ const Footer: React.FC = () => {
     { url: 'https://medium.com/@Bentleyblockchain', network: 'medium' },
     { url: 'https://www.linkedin.com/company/bentley-blockchain', network: 'linkedin' },
     { url: 'https://x.com/BentleyWeb3', network: 'x' },
+    { url: 'https://github.com/mbrepos/bba.website', network: 'github' },
   ];
 
   return (
@@ -90,7 +91,7 @@ const Footer: React.FC = () => {
           </FooterSection>
         </FooterContent>
         <FooterBottom>
-          <p> © {new Date().getFullYear()} Bentley Blockchain Association. All rights reserved.</p>
+          <p> &copy; {new Date().getFullYear()} Bentley Blockchain Association. All rights reserved.</p>
         </FooterBottom>
       </FooterInnerContainer>
     </FooterContainer>

@@ -68,6 +68,7 @@ const Contact: React.FC = () => {
     { url: 'https://medium.com/@Bentleyblockchain', network: 'medium' },
     { url: 'https://www.linkedin.com/company/bentley-blockchain', network: 'linkedin' },
     { url: 'https://x.com/BentleyWeb3', network: 'x' },
+    { url: 'https://github.com/mbrepos/bba.website', network: 'github' },
   ];
 
   return (
