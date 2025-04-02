@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppContainer, MainContent, globalStyles } from './styles/app';
 import { ThemeProvider, Global } from '@emotion/react';
@@ -23,6 +24,7 @@ function App() {
           <MainContent>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<Construction />} />
               <Route path="/construction" element={<Construction />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/community" element={<Construction />} />

@@ -2,6 +2,7 @@ import React from 'react';
 import TeamCard from '../TeamCard'; // Adjusted path
 import Footer from '../Footer'; // Adjusted path
 import { PartnerItemProps } from '../../types'; // Adjusted path
+import DwitterCanvas from '../DwitterCanvas'; // Import DwitterCanvas component
 import {
   LandingWrapper,
   ElementWrapper,
@@ -63,18 +64,33 @@ import spawn from '../../images/spawn.png';
 const Landing: React.FC = () => (
   <LandingWrapper>
     <ElementWrapper>
-      <LandingTitle>Bentley Blockchain Association</LandingTitle>
-      <LandingSubtitle>
-        Shaping the Future of Blockchain Innovation, Education, and Technology at Bentley University
-      </LandingSubtitle>
-      <OutlineButton
-        as="a"
-        href="https://medium.com/@Bentleyblockchain"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn More
-      </OutlineButton>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+        <div style={{ 
+          width: '300px',
+          height: '200px',
+          overflow: 'visible',
+          backgroundColor: 'transparent',
+          backdropFilter: 'none',
+          boxShadow: 'none',
+          borderRadius: '0'
+        }}>
+          <DwitterCanvas />
+        </div>
+        <div style={{ flex: '1', minWidth: '300px' }}>
+          <LandingTitle>Bentley Blockchain Association</LandingTitle>
+          <LandingSubtitle>
+            Shaping the Future of Blockchain Innovation, Education, and Technology at Bentley University
+          </LandingSubtitle>
+          <OutlineButton
+            as="a"
+            href="https://medium.com/@Bentleyblockchain"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn More
+          </OutlineButton>
+        </div>
+      </div>
     </ElementWrapper>
   </LandingWrapper>
 );
@@ -244,7 +260,7 @@ const partnersData: PartnerItemProps[] = [
   { href: 'https://www.coingecko.com/', src: coingecko, alt: 'CoinGecko Logo' },
   { href: 'https://www.thetie.io/', src: thetie, alt: 'The Tie Logo' },
   { href: 'https://www.blockchainacceleration.org/', src: baf, alt: 'BAF Logo' },
-  { href: 'https://www.spawn.com/', src: spawn, alt: 'Spawn Logo' },
+  { href: 'https://www.linkedin.com/company/spawnglobal/', src: spawn, alt: 'Spawn Logo' },
 ];
 
 const PartnerItem: React.FC<PartnerItemProps> = ({ href, src, alt, invert = false }) => (

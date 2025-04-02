@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Theme } from '@emotion/react';
 
 interface NavbarProps {
   isScrolled: boolean;
@@ -17,26 +18,20 @@ interface NavCollapseProps {
 }
 
 // Main navbar container
-export const NavbarContainer = styled.nav<NavbarProps>`
+export const NavbarContainer = styled('nav', {
+  shouldForwardProp: (propName: string) => propName !== 'isScrolled',
+})<NavbarProps & { theme: Theme }>`
   position: fixed;
   top: 0;
-  left: 0; 
+  left: 0;
   right: 0;
-  // @ts-ignore: Using theme from emotion
   z-index: ${({ theme }) => theme.zIndices.navbar};
-  // @ts-ignore: Using theme from emotion
-  background-color: ${({ isScrolled, theme }) =>
-    isScrolled ? theme.colors.white : 'transparent'};
-  // @ts-ignore: Using theme from emotion
-  color: ${({ isScrolled, theme }) =>
-    isScrolled ? theme.colors.text : theme.colors.white};
-  // @ts-ignore: Using theme from emotion
+  background-color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.white : 'transparent')};
+  color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.text : theme.colors.white)};
   transition: ${({ theme }) => theme.transitions.medium};
   padding: 1rem 0;
-  // @ts-ignore: Using theme from emotion
   ${({ isScrolled, theme }) => isScrolled && `box-shadow: ${theme.boxShadows.small};`}
   
-  // @ts-ignore: Using theme from emotion
   ${({ theme }) => theme.mq.sm} {
     padding: 0.75rem 0;
   }
@@ -51,9 +46,7 @@ export const NavbarInnerContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   
-  // @ts-ignore: Using theme from emotion
   ${({ theme }) => theme.mq.sm} {
-    // @ts-ignore: Using theme from emotion
     padding: 0 ${({ theme }) => theme.spacing.sm};
   }
 `;
@@ -63,9 +56,7 @@ export const Brand = styled('a')<{ to?: string }>`
   display: flex;
   align-items: center;
   text-decoration: none;
-  // @ts-ignore: Using theme from emotion
   color: ${({ theme }) => theme.colors.text};
-  // @ts-ignore: Using theme from emotion
   z-index: ${({ theme }) => theme.zIndices.navbar + 1};
   position: relative;
 `;
@@ -327,5 +318,24 @@ export const NavCollapse = styled.div<NavCollapseProps>`
     overflow-y: auto;
     // @ts-ignore: Using theme from emotion
     transition: max-height ${({ theme }) => theme.transitions.medium};
+  }
+`;
+
+export const Nav = styled('nav', {
+  shouldForwardProp: (propName: string) => propName !== 'isScrolled',
+})<NavbarProps & { theme: Theme }>`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: ${({ theme }) => theme.zIndices.navbar};
+  background-color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.white : 'transparent')};
+  color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.text : theme.colors.white)};
+  transition: ${({ theme }) => theme.transitions.medium};
+  padding: 1rem 0;
+  ${({ isScrolled, theme }) => isScrolled && `box-shadow: ${theme.boxShadows.small};`}
+  
+  ${({ theme }) => theme.mq.sm} {
+    padding: 0.75rem 0;
   }
 `;

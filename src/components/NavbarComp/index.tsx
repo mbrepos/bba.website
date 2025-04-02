@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../images/bbalogowhite.png'; // Adjusted path
 import {
   NavbarContainer,
@@ -17,10 +17,12 @@ import {
   NavCollapse,
 } from './styles';
 import { NavItem as NavItemType } from '../../types'; // Adjusted path
+import theme from '../../styles/theme';
 
 const NavbarComp: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navItems: NavItemType[] = [
     {
@@ -51,6 +53,10 @@ const NavbarComp: React.FC = () => {
       ],
     },
   ];
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -88,7 +94,7 @@ const NavbarComp: React.FC = () => {
   );
 
   return (
-    <NavbarContainer isScrolled={isScrolled}>
+    <NavbarContainer isScrolled={isScrolled} theme={theme}>
       <NavbarInnerContainer>
         <Brand as={Link} to="/">
           <LogoImg src={Logo} alt="BBA Logo" />

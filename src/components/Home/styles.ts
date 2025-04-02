@@ -67,7 +67,7 @@ export const LandingSubtitle = styled.h2`
   }
 `;
 
-export const OutlineButton = styled.button<PolymorphicProps>`
+export const OutlineButton = styled('button')<PolymorphicProps>`
   padding: 1rem 2.5rem;
   font-size: 1.125rem;
   color: ${({ theme }) => theme.colors?.primary || '#144181'};
