@@ -53,7 +53,7 @@ export const FooterHeading = styled.h3`
   transition: color ${({ theme }) => theme.transitions?.fast || '0.2s ease'};
 
   &:hover {
-    color: ${({ theme }) => theme.colors.primary || '#144181'};
+    opacity: 0.9;
   }
 `;
 
@@ -79,8 +79,7 @@ export const FooterLink = styled.a`
   padding: ${({ theme }) => theme.spacing.xs || '0.25rem'} 0;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.primary || '#144181'};
-    text-decoration: none;
+    opacity: 0.9;
   }
 `;
 
@@ -97,14 +96,16 @@ export const SocialLinks = styled.div`
   }
 `;
 
-// Social icon wrapper
+// Social icon wrapper // &;hove transform: scale(1.1);)
 export const SocialIconWrapper = styled.div`
   transition: transform ${({ theme }) => theme.transitions?.fast || '0.2s ease'};
 
   &:hover {
-    transform: scale(1.1);
+    transform: translateY(-3px);
   }
 `;
+
+
 
 // Bottom section for copyright
 export const FooterBottom = styled.div`

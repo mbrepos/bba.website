@@ -97,12 +97,13 @@ export const SubmitButton = styled.button`
   letter-spacing: 0.5px;
   margin-top: ${({ theme }) => theme.spacing.md};
   border-radius: ${({ theme }) => theme.borderRadius.small};
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.white};
   border: none;
   transition: all ${({ theme }) => theme.transitions.medium};
 
   &:hover {
+    opacity: 0.9;
     transform: translateY(-2px);
     box-shadow: ${({ theme }) => theme.boxShadows.medium};
   }

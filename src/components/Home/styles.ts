@@ -76,9 +76,9 @@ export const LandingSubtitle = styled.h2`
 export const OutlineButton = styled('button')<PolymorphicProps>`
   padding: 1rem 2.5rem;
   font-size: 1.125rem;
-  color: ${({ theme }) => theme.colors?.primary || '#144181'};
-  border: 1px solid ${({ theme }) => theme.colors?.primary || '#144181'};
-  background-color: ${({ theme }) => theme.colors?.white || 'white'};
+  color: ${({ theme }) => theme.colors?.white || 'white'};
+  border: 1px solid ${({ theme }) => theme.colors?.black || 'black'};
+  background-color: ${({ theme }) => theme.colors?.black || 'black'};
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
@@ -86,9 +86,9 @@ export const OutlineButton = styled('button')<PolymorphicProps>`
   border-radius: ${({ theme }) => theme.borderRadius?.small || '4px'};
 
   &:hover {
+    opacity: 0.9;
     background-color: transparent;
-    color: ${({ theme }) => theme.colors?.white || 'white'};
-    border: 1px solid ${({ theme }) => theme.colors?.white || 'white'};
+    border: 1px solid ${({ theme }) => theme.colors?.black || 'black'};
     text-decoration: none;
   }
 
@@ -158,7 +158,7 @@ export const DarkButton = styled.button<PolymorphicProps>`
 export const OutlineDarkButton = styled.button<PolymorphicProps>`
   padding: 0.75rem 1.5rem;
   font-size: 0.875rem;
-  color: ${({ theme }) => theme.colors?.black || '#000'};
+  color: ${({ theme }) => theme.colors?.black || 'black'};
   border: 1px solid ${({ theme }) => theme.colors?.black || '#000'};
   background: transparent;
   font-weight: bold;
@@ -167,14 +167,14 @@ export const OutlineDarkButton = styled.button<PolymorphicProps>`
   display: inline-block;
   cursor: pointer;
   &:hover {
-    background: ${({ theme }) => theme.colors?.black || '#000'};
-    color: ${({ theme }) => theme.colors?.white || 'white'};
+    opacity: 0.9;
+    background: transparent;
   }
 `;
 
 // Description Section
 export const DescriptionWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors?.primary || '#144181'};
+  background-color: ${({ theme }) => theme.colors?.backgroundDark};
   padding: ${({ theme }) => theme.spacing?.xl || '4rem'} 0;
   color: ${({ theme }) => theme.colors?.white || 'white'};
 `;
@@ -212,7 +212,7 @@ export const DescriptionGrid = styled.div`
 
 export const DescriptionItem = styled.div`
   padding: ${({ theme }) => theme.spacing?.lg || '2rem'};
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: ${({ theme }) => theme.colors?.black || '#000000'};
   border-radius: ${({ theme }) => theme.borderRadius?.medium || '8px'};
   transition: transform ${({ theme }) => theme.transitions?.medium || '0.3s ease'};
   &:hover {
@@ -290,7 +290,7 @@ export const TeamCardContainer = styled.div`
 // Partners Section
 export const PartnersWrapper = styled.div`
   padding: ${({ theme }) => theme.spacing?.xxl || '5rem'} ${({ theme }) => theme.spacing?.lg || '2rem'};
-  background-color: ${({ theme }) => theme.colors?.primary || '#030a2f'};
+  background-color: ${({ theme }) => theme.colors?.backgroundDark};
 `;
 
 export const PartnersContainer = styled.div`

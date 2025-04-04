@@ -26,8 +26,8 @@ export const NavbarContainer = styled('nav', {
   left: 0;
   right: 0;
   z-index: ${({ theme }) => theme.zIndices.navbar};
-  background-color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.white : 'transparent')};
-  color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.text : theme.colors.white)};
+  background-color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.primary : 'transparent')};
+  color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.white : theme.colors.white)};
   transition: ${({ theme }) => theme.transitions.medium};
   padding: 1rem 0;
   ${({ isScrolled, theme }) => isScrolled && `box-shadow: ${theme.boxShadows.small};`}
@@ -65,7 +65,7 @@ export const LogoImg = styled.img`
   width: 125px;
   height: 50px;
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.sm} {
     width: 100px;
     height: 40px;
@@ -79,7 +79,7 @@ export const NavLinksContainer = styled.div`
   gap: 1.5rem;
   margin-left: auto;
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.lg} {
     flex-direction: column;
     align-items: flex-start;
@@ -90,36 +90,29 @@ export const NavLinksContainer = styled.div`
 
 // Individual navigation link
 export const NavLink = styled.a<{ to?: string; isScrolled: boolean }>`
-  // @ts-ignore: Using theme from emotion
   font-size: ${({ theme }) => theme.fontSizes.small};
-  // @ts-ignore: Using theme from emotion
-  color: ${({ isScrolled, theme }) =>
-    isScrolled ? theme.colors.text : theme.colors.white};
-  // @ts-ignore: Using theme from emotion
+  color: ${({ theme }) => theme.colors.white};
   font-weight: ${({ theme }) => theme.fontWeights.medium};
-  // @ts-ignore: Using theme from emotion
   transition: color ${({ theme }) => theme.transitions.fast};
-  // @ts-ignore: Using theme from emotion
   padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.md};
   text-decoration: none;
   
   &:hover {
-    // @ts-ignore: Using theme from emotion
-    color: ${({ theme }) => theme.colors.primary};
+  opacity: 0.9;
   }
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.lg} {
-    // @ts-ignore: Using theme from emotion
+  
     color: ${({ theme }) => theme.colors.text};
-    // @ts-ignore: Using theme from emotion
+  
     padding: ${({ theme }) => theme.spacing.md};
     width: 100%;
-    // @ts-ignore: Using theme from emotion
+  
     border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundLight};
     
     &:first-of-type {
-      // @ts-ignore: Using theme from emotion
+    
       border-top: 1px solid ${({ theme }) => theme.colors.backgroundLight};
     }
   }
@@ -130,20 +123,20 @@ export const DropdownMenu = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
-  // @ts-ignore: Using theme from emotion
+
   background-color: ${({ theme }) => theme.colors.white};
-  // @ts-ignore: Using theme from emotion
+
   border-radius: ${({ theme }) => theme.borderRadius.medium};
-  // @ts-ignore: Using theme from emotion
+
   box-shadow: ${({ theme }) => theme.boxShadows.medium};
-  // @ts-ignore: Using theme from emotion
+
   padding: ${({ theme }) => theme.spacing.sm} 0;
   min-width: 200px;
   display: none;
-  // @ts-ignore: Using theme from emotion
+
   z-index: ${({ theme }) => theme.zIndices.navbar + 5};
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.lg} {
     box-shadow: none;
     border: none;
@@ -167,7 +160,7 @@ export const Dropdown = styled.div<DropdownProps>`
     display: block;
   }
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.lg} {
     width: 100%;
     display: block;
@@ -176,34 +169,34 @@ export const Dropdown = styled.div<DropdownProps>`
 
 // Dropdown toggle (title)
 export const DropdownToggle = styled.div<NavLinkProps & DropdownProps>`
-  // @ts-ignore: Using theme from emotion
+
   font-size: ${({ theme }) => theme.fontSizes.small};
-  // @ts-ignore: Using theme from emotion
+
   color: ${({ isScrolled, theme }) =>
-    isScrolled ? theme.colors.text : theme.colors.white};
-  // @ts-ignore: Using theme from emotion
+    isScrolled ? theme.colors.white : theme.colors.white};
+
   font-weight: ${({ theme }) => theme.fontWeights.medium};
-  // @ts-ignore: Using theme from emotion
+
   transition: color ${({ theme }) => theme.transitions.fast};
   cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
-  // @ts-ignore: Using theme from emotion
+
   padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.md};
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.lg} {
-    // @ts-ignore: Using theme from emotion
+  
     color: ${({ theme }) => theme.colors.text};
-    // @ts-ignore: Using theme from emotion
+  
     padding: ${({ theme }) => theme.spacing.md};
     width: 100%;
-    // @ts-ignore: Using theme from emotion
+  
     border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundLight};
     position: relative;
     
     &::after {
       content: '▼';
       position: absolute;
-      // @ts-ignore: Using theme from emotion
+    
       right: ${({ theme }) => theme.spacing.md};
       top: 50%;
       transform: translateY(-50%);
@@ -215,28 +208,26 @@ export const DropdownToggle = styled.div<NavLinkProps & DropdownProps>`
 // Dropdown item
 export const DropdownItem = styled.a<{ to?: string }>`
   display: block;
-  // @ts-ignore: Using theme from emotion
+
   padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.md};
-  // @ts-ignore: Using theme from emotion
+
   color: ${({ theme }) => theme.colors.text};
   text-decoration: none;
   white-space: nowrap;
   
   &:hover {
-    // @ts-ignore: Using theme from emotion
+    opacity: 0.9;
     background-color: ${({ theme }) => theme.colors.backgroundLight};
-    // @ts-ignore: Using theme from emotion
-    color: ${({ theme }) => theme.colors.primary};
   }
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.lg} {
-    // @ts-ignore: Using theme from emotion
+  
     padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.lg};
-    // @ts-ignore: Using theme from emotion
+  
     border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundLight};
     white-space: normal;
-    // @ts-ignore: Using theme from emotion
+  
     font-size: ${({ theme }) => theme.fontSizes.small};
     
     &:last-child {
@@ -250,10 +241,10 @@ export const MenuToggle = styled.button`
   display: none;
   background: none;
   border: none;
-  // @ts-ignore: Using theme from emotion
+
   padding: ${({ theme }) => theme.spacing.sm};
   cursor: pointer;
-  // @ts-ignore: Using theme from emotion
+
   z-index: ${({ theme }) => theme.zIndices.navbar + 1};
   position: relative;
   
@@ -261,7 +252,7 @@ export const MenuToggle = styled.button`
     outline: none;
   }
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.lg} {
     display: block;
   }
@@ -272,9 +263,9 @@ export const MenuIcon = styled.span`
   display: block;
   width: 25px;
   height: 3px;
-  background-color: currentColor;
+  background-color: ${({ theme }) => theme.colors.white};
   position: relative;
-  // @ts-ignore: Using theme from emotion
+
   transition: ${({ theme }) => theme.transitions.fast};
   
   &:before,
@@ -283,8 +274,8 @@ export const MenuIcon = styled.span`
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: currentColor;
-    // @ts-ignore: Using theme from emotion
+    background-color: ${({ theme }) => theme.colors.white};
+  
     transition: ${({ theme }) => theme.transitions.fast};
   }
   
@@ -301,7 +292,7 @@ export const MenuIcon = styled.span`
 export const NavCollapse = styled.div<NavCollapseProps>`
   display: flex;
   
-  // @ts-ignore: Using theme from emotion
+
   ${({ theme }) => theme.mq.lg} {
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     flex-direction: column;
@@ -309,14 +300,14 @@ export const NavCollapse = styled.div<NavCollapseProps>`
     top: 100%;
     left: 0;
     right: 0;
-    // @ts-ignore: Using theme from emotion
+  
     background-color: ${({ theme }) => theme.colors.white};
     padding: 0;
-    // @ts-ignore: Using theme from emotion
+  
     box-shadow: ${({ theme }) => theme.boxShadows.medium};
     max-height: ${({ isOpen }) => (isOpen ? '80vh' : '0')};
     overflow-y: auto;
-    // @ts-ignore: Using theme from emotion
+  
     transition: max-height ${({ theme }) => theme.transitions.medium};
   }
 `;
@@ -329,8 +320,8 @@ export const Nav = styled('nav', {
   left: 0;
   right: 0;
   z-index: ${({ theme }) => theme.zIndices.navbar};
-  background-color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.white : 'transparent')};
-  color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.text : theme.colors.white)};
+  background-color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.primary : 'transparent')};
+  color: ${({ isScrolled, theme }) => (isScrolled ? theme.colors.white : theme.colors.white)};
   transition: ${({ theme }) => theme.transitions.medium};
   padding: 1rem 0;
   ${({ isScrolled, theme }) => isScrolled && `box-shadow: ${theme.boxShadows.small};`}

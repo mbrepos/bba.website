@@ -27,7 +27,7 @@ const NavbarComp: React.FC = () => {
   const navItems: NavItemType[] = [
     {
       title: 'Community',
-      items: [{ label: 'Join the Community', path: '/community' }],
+      items: [{ label: 'Discord', path: 'https://discord.gg/7K2MAqYJrQ', external: true }],
     },
     {
       title: 'Students',
@@ -46,10 +46,10 @@ const NavbarComp: React.FC = () => {
     },
     {
       title: 'Incubator',
-      disabled: true,
+      disabled: false,
       items: [
-        { label: 'Dashboard', path: '#' },
-        { label: 'Learn More', path: '#' },
+        { label: 'Dashboard', path: '../Construction' },
+        { label: 'Learn More', path: '../Construction' },
       ],
     },
   ];

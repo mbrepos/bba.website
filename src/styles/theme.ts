@@ -1,13 +1,14 @@
 // Define theme variables for consistent styling across the application
 const theme = {
   colors: {
-    primary: '#030a2f',
+    // deep oxford blue rgb(2, 9, 46) OR // bentley blue rgb(25, 66, 126)
+    primary: '#020b2f',
+    // eggshell white rgb(248, 249, 250)
     secondary: '#f8f9fa',
     text: '#333',
     lightText: '#666',
     backgroundLight: '#f8f9fa',
     backgroundDark: '#1c1c1c',
-    navy: '#030a2f',
     white: '#ffffff',
     black: '#000000',
     error: '#dc3545',

@@ -108,7 +108,7 @@ const Goals: React.FC = () => (
     <GoalsLeftContainer>
       <GoalsText>
         <h2>
-          <span className="creating-inspiration">Creating Inspiration Through Blockchain Innovation</span>
+          <span className="creating-inspiration">Get Involved! Inspire and Innovate the Future of Blockchain with us at Bentley University</span>
         </h2>
       </GoalsText>
       <GoalsButtons>

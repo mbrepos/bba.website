@@ -97,4 +97,5 @@ export const StyledCloseButton = styled(Button)`
   padding: 0.5rem 1.5rem;
   font-weight: 500;
   border-radius: 6px;
+  background-color: ${({ theme }) => theme.colors?.black || '#000'};
 `;
