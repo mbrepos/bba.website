@@ -1,5 +1,4 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons';
 import Footer from '../Footer';
 import abstract from '../../images/abstractabout.png';
 import randomFalcon from '../../images/white.png';
@@ -13,29 +12,10 @@ import {
   FalconSection,
   FalconContainer,
   FalconImage,
-  FalconText,
-  SocialInfoSection,
-  SocialInfoElement,
-  SocialWrapper,
-  StyledSocialIcon
+  FalconText
 } from './styles';
 
 const About: React.FC = () => {
-  const socialLinks = [
-    {
-      url: 'https://www.linkedin.com/company/bentley-blockchain/',
-      label: 'LinkedIn',
-    },
-    {
-      url: 'https://t.me/bentleyblockchain',
-      label: 'Telegram',
-    },
-    {
-      url: 'https://medium.com/@Bentleyblockchain',
-      label: 'Medium',
-    },
-  ];
-
   return (
     <AboutContainer>
       <AboutLanding>
@@ -62,26 +42,6 @@ const About: React.FC = () => {
           </p>
         </FalconText>
       </FalconSection>
-
-      <SocialInfoSection>
-        {socialLinks.map((link, index) => (
-          <SocialInfoElement key={index}>
-            <SocialWrapper>
-              <StyledSocialIcon>
-                <SocialIcon
-                  url={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-icon"
-                  style={{ padding: '100px' }}
-                  label={link.label}
-                />
-              </StyledSocialIcon>
-            </SocialWrapper>
-          </SocialInfoElement>
-        ))}
-      </SocialInfoSection>
-      
       <Footer />
     </AboutContainer>
   );

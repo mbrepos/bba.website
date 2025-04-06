@@ -15,14 +15,6 @@ import {
   GoalsButtons,
   DarkButton,
   OutlineDarkButton,
-  DescriptionWrapper,
-  DescriptionInnerWrapper,
-  DescriptionHeader,
-  AsciiHeader,
-  DescriptionGrid,
-  DescriptionItem,
-  Highlight,
-  Quote,
   TeamWrapper,
   TeamInnerContainer,
   TeamHeading,
@@ -34,6 +26,14 @@ import {
   PartnerHeader,
   PartnerLogos,
   PartnerLink,
+  DescriptionWrapper,
+  DescriptionInnerWrapper,
+  DescriptionHeader,
+  AsciiHeader,
+  DescriptionGrid,
+  DescriptionItem,
+  Highlight,
+  Quote,
 } from './styles';
 
 // Image imports (adjusted paths)
@@ -112,6 +112,12 @@ const Goals: React.FC = () => (
         </h2>
       </GoalsText>
       <GoalsButtons>
+        <DarkButton
+          as="a"
+          href="/about"
+        >
+          About Us
+        </DarkButton>
         <DarkButton
           as="a"
           href="https://bentley-blockchain-association.gitbook.io/bentley-blockchain-association/"

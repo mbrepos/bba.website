@@ -77,8 +77,8 @@ export const OutlineButton = styled('button')<PolymorphicProps>`
   padding: 1rem 2.5rem;
   font-size: 1.125rem;
   color: ${({ theme }) => theme.colors?.white || 'white'};
-  border: 1px solid ${({ theme }) => theme.colors?.black || 'black'};
-  background-color: ${({ theme }) => theme.colors?.black || 'black'};
+  border: 1px solid ${({ theme }) => theme.colors?.primary || 'primary'};
+  background-color: ${({ theme }) => theme.colors?.primary || 'primary'};
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
@@ -88,7 +88,7 @@ export const OutlineButton = styled('button')<PolymorphicProps>`
   &:hover {
     opacity: 0.9;
     background-color: transparent;
-    border: 1px solid ${({ theme }) => theme.colors?.black || 'black'};
+    border: 1px solid ${({ theme }) => theme.colors?.primary || 'primary'};
     text-decoration: none;
   }
 

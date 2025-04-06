@@ -101,7 +101,7 @@ export const SocialIconWrapper = styled.div`
   transition: transform ${({ theme }) => theme.transitions?.fast || '0.2s ease'};
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.1);
   }
 `;
 

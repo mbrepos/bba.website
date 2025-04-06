@@ -1,6 +1,4 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { StrictMode } from 'react';
 import App from './App';
 
 // This file creates the root and root render for the app 
@@ -10,7 +8,5 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+  <App />
 );
