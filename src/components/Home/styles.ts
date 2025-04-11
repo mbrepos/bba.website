@@ -176,7 +176,7 @@ export const OutlineDarkButton = styled.button<PolymorphicProps>`
 export const DescriptionWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors?.backgroundDark};
   padding: ${({ theme }) => theme.spacing?.xl || '4rem'} 0;
-  color: ${({ theme }) => theme.colors?.white || 'white'};
+  color: ${({ theme }) => theme.colors?.text || '#333'};
 `;
 
 export const DescriptionInnerWrapper = styled.div`
@@ -212,7 +212,7 @@ export const DescriptionGrid = styled.div`
 
 export const DescriptionItem = styled.div`
   padding: ${({ theme }) => theme.spacing?.lg || '2rem'};
-  background-color: ${({ theme }) => theme.colors?.black || '#000000'};
+  background-color: ${({ theme }) => theme.colors?.backgroundLight || '#f8f9fa'};
   border-radius: ${({ theme }) => theme.borderRadius?.medium || '8px'};
   transition: transform ${({ theme }) => theme.transitions?.medium || '0.3s ease'};
   &:hover {
@@ -221,7 +221,7 @@ export const DescriptionItem = styled.div`
   h2 {
     font-size: ${({ theme }) => theme.fontSizes?.xlarge || '1.75rem'};
     margin-bottom: ${({ theme }) => theme.spacing?.md || '1.5rem'};
-    color: ${({ theme }) => theme.colors?.white || 'white'};
+    color: ${({ theme }) => theme.colors?.text || '#333'};
   }
   p {
     font-size: ${({ theme }) => theme.fontSizes?.medium || '1rem'};
@@ -238,14 +238,14 @@ export const DescriptionItem = styled.div`
 `;
 
 export const Highlight = styled.span`
-  color: ${({ theme }) => theme.colors?.lightText || '#666'};
+  color: ${({ theme }) => theme.colors?.text|| '#333'};
   font-weight: ${({ theme }) => theme.fontWeights?.bold || 'bold'};
 `;
 
 export const Quote = styled.span`
   display: block;
   font-style: italic;
-  color: ${({ theme }) => theme.colors?.lightText || '#666'};
+  color: ${({ theme }) => theme.colors?.primary || 'primary'};
   margin-top: ${({ theme }) => theme.spacing?.md || '1rem'};
 `;
 

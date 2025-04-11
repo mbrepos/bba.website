@@ -97,7 +97,7 @@ export const SubmitButton = styled.button`
   letter-spacing: 0.5px;
   margin-top: ${({ theme }) => theme.spacing.md};
   border-radius: ${({ theme }) => theme.borderRadius.small};
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.white};
   border: none;
   transition: all ${({ theme }) => theme.transitions.medium};

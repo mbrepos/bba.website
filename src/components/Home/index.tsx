@@ -51,6 +51,9 @@ import nilufarclear from '../../images/png/nilufarclear.png';
 import chrisclear from '../../images/png/chrisclear.png';
 import antonisclear from '../../images/png/antonisclear.png';
 import javierclear from '../../images/png/javiclear.png';
+import jamesonS from '../../images/png/new/jamesonS.png';
+import jamesonS2 from '../../images/png/new/jamesonS2.png';
+import julesRouyer from '../../images/png/new/julesRouyer.png';
 
 // Partner Logo Imports (adjusted paths)
 import hedera_logo from '../../images/hedera_logo.png';
@@ -108,7 +111,7 @@ const Goals: React.FC = () => (
     <GoalsLeftContainer>
       <GoalsText>
         <h2>
-          <span className="creating-inspiration">Get Involved! Inspire and Innovate the Future of Blockchain with us at Bentley University</span>
+          <span className="creating-inspiration">Get Involved: Innovate and Build the Future of Blockchain with us at Bentley University!</span>
         </h2>
       </GoalsText>
       <GoalsButtons>
@@ -219,7 +222,7 @@ const Team: React.FC = () => (
           </TeamCardContainer>
         </TeamRow>
         <TeamRow>
-        <TeamCardContainer>
+          <TeamCardContainer>
             <TeamCard
               name="Mike Binder"
               title="Vice President, Technology"
@@ -227,7 +230,7 @@ const Team: React.FC = () => (
               linkedin="https://www.linkedin.com/in/m-binder/"
             />
           </TeamCardContainer>
-        <TeamCardContainer>
+          <TeamCardContainer>
             <TeamCard
               name="Javier Crisostomo"
               title="Vice President, Marketing"
@@ -235,8 +238,8 @@ const Team: React.FC = () => (
               linkedin="https://www.linkedin.com/in/javicrisval/"
             />
           </TeamCardContainer>
-          </TeamRow>
-          <TeamRow>
+        </TeamRow>
+        <TeamRow>
           <TeamCardContainer>
             <TeamCard
               name="Antonis Moraitis"
@@ -247,8 +250,26 @@ const Team: React.FC = () => (
           </TeamCardContainer>
           <TeamCardContainer>
             <TeamCard
+              name="Jules Rouyer"
+              title="Blockchain Analyst"
+              icon={julesRouyer}
+              linkedin="https://www.linkedin.com/in/jules-rouyer-956607213/"
+            />
+          </TeamCardContainer>
+          <TeamCardContainer>
+            <TeamCard
+              name="Jameson S."
+              title="Blockchain Analyst"
+              icon={jamesonS2}
+              linkedin="https://www.linkedin.com/in/jameson-s-645917315/"
+            />
+          </TeamCardContainer>
+        </TeamRow>
+        <TeamRow>
+          <TeamCardContainer>
+            <TeamCard
               name="Nilufar Noorian"
-              title="Director of Technology"
+              title="Ranking Member"
               icon={nilufarclear}
               linkedin="https://www.linkedin.com/in/nilufar-noorian/"
             />
@@ -256,7 +277,7 @@ const Team: React.FC = () => (
           <TeamCardContainer>
             <TeamCard
               name="Chris Guyette"
-              title="Senior Advisor"
+              title="Ranking Member"
               icon={chrisclear}
               linkedin="https://www.linkedin.com/in/christopher-guyette/"
             />
