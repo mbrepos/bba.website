@@ -142,7 +142,7 @@ export const GoalsButtons = styled.div`
 export const DarkButton = styled.button<PolymorphicProps>`
   padding: 0.75rem 1.5rem;
   font-size: 0.875rem;
-  background: ${({ theme }) => theme.colors?.black || '#000'};
+  background: ${({ theme }) => theme.colors?.primary || 'primary'};
   color: ${({ theme }) => theme.colors?.white || 'white'};
   border: none;
   font-weight: bold;
@@ -158,8 +158,8 @@ export const DarkButton = styled.button<PolymorphicProps>`
 export const OutlineDarkButton = styled.button<PolymorphicProps>`
   padding: 0.75rem 1.5rem;
   font-size: 0.875rem;
-  color: ${({ theme }) => theme.colors?.black || 'black'};
-  border: 1px solid ${({ theme }) => theme.colors?.black || '#000'};
+  color: ${({ theme }) => theme.colors?.primary || 'primary'};
+  border: 1px solid ${({ theme }) => theme.colors?.primary || 'primary'};
   background: transparent;
   font-weight: bold;
   transition: all 0.3s ease;
